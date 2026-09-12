@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AyyanOS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="desktop">
+  <div class="welcome">
+    <h1>Welcome to AyyanOS</h1>
+    <p>Your own operating system — running in the web.</p>
+  </div>
+  <div class="app-grid">
+    <button class="app" data-app="about"><span>💻</span><b>About</b></button>
+    <button class="app" data-app="notes"><span>📝</span><b>Notes</b></button>
+    <button class="app" data-app="calculator"><span>🧮</span><b>Calculator</b></button>
+  </div>
+  <section id="window" class="window hidden">
+    <div class="titlebar"><strong id="window-title">AyyanOS</strong><button id="close-window">✕</button></div>
+    <div id="window-content"></div>
+  </section>
+  <footer class="taskbar"><button id="start-button">✦ AyyanOS</button><span id="clock"></span></footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
